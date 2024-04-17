@@ -41,30 +41,20 @@ public class U2W3D3DesignPatternsApplication {
 		listaPagine.add(new Pagina());
 		listaPagine.add(new Pagina());
 		listaPagine.add(new Pagina());
-		listaPagine.add(new Pagina());
-		listaPagine.add(new Pagina());
 
-		Sottosezione sottosezione1 = new Sottosezione(new ArrayList<>());
-
-		List<Sottosezione> listaSottosezione = new ArrayList<>();
-		listaSottosezione.add(sottosezione1);
-
-
-		Sezione sezione1 = new Sezione(new ArrayList<>(), listaSottosezione);
-
+		System.out.println(listaPagine);
 
 		List<Sezione> listaSezioni = new ArrayList<>();
+		Sezione sezione1 = new Sezione(listaPagine);
 		listaSezioni.add(sezione1);
-
 
 		Autore autore = new Autore("Alessia", "Luongo", 29);
 		List<Autore> listaAutori = new ArrayList<>();
 		listaAutori.add(autore);
 
-		Libro libro = new Libro("Un libro", listaSezioni ,listaAutori, 10.50);
+		Libro libro = new Libro("Un libro", listaSezioni, listaAutori, 10.50);
 
 		System.out.println(libro.howManyPages());
-
 	}
 
 

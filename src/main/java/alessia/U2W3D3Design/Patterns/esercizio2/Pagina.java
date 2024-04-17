@@ -7,10 +7,7 @@ import java.util.List;
 @Setter
 @ToString
 @AllArgsConstructor
-@NoArgsConstructor
 public class Pagina implements Lunghezza {
-
-    private int pagine;
 
     @Override
     public int howManyPages() {

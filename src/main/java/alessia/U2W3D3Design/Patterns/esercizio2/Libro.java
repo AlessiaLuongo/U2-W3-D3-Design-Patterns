@@ -22,9 +22,8 @@ public class Libro implements Lunghezza{
     @Override
     public int howManyPages() {
         int totalPages = 0;
-        for (Sezione sezione : sezioni){
+        for (Sezione sezione : sezioni) {
             totalPages += sezione.howManyPages();
         }
         return totalPages;
-    }
-}
+}}
